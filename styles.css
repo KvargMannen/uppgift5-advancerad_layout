@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    background-color: #A8E9E5;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #084C61;
+    color: #A8E9E5;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-bottom: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #01253C;
+    background-color: #C9FBFF;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+header nav a:hover {
+    background-color: #85F7FF;
+    color: black;
+
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    padding: 0 30px;
+}
+
+footer {
+    background-color: #084C61;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (min-width:650px) {
+    header nav {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    main {
+        display: flex;
+        gap: 30px;
+        margin: 0px 30px;
+    }
+
+}
+
+
+/* Form */
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+.send-button-container {
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+@media (min-width: 650px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .send-button-container {
+        grid-column: span 2;
+    }
+}
